@@ -21,10 +21,10 @@ And to know more about git commands or want to look into any specific git comman
 git help
 ```
 
-4. When you have some new code repo on your local system , so as a first step you should open a terminal and set the location to the repo's folder and then hit
+3. When you have some new code repo on your local system , so as a first step you should open a terminal and set the location to the repo's folder and then hit
 
    ```
    git int # this will intiallize the project in git by creating invisble .git folder
    ```
 
-5. Stagging files and creating commits
+4. Stagging files and creating commits
