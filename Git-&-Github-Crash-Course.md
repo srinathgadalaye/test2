@@ -100,3 +100,18 @@ git help
     - Create ".gitignore" file in your repository and include all the files names which you wanted to be ignored by git and not pushed, as shown in above image, which is ".vscode" and ".DS_Store"
     - now you can use "git add ." that this will stack all the files at ones and ignores all the files which are mentioned in the .gitignore file.
     
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h1>Branches</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+10. 
