@@ -114,4 +114,16 @@ git help
 <br/>
 
 
-10. 
+10. Understanding the Git Branches
+
+   <img width="896" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/f2dcd4d8-3315-4b1f-955f-6324dfba7d1a">
+   
+   - When you intiatlize the git project with "git init", you get by default "main" branch(will contains all your commits)
+   - **git branch < Name of Branch>** : it will create new branch, by default this will take your latest commit(as starting point) and create new branch, as shown above for "C2" commit for branch "feature-1"
+   - **git merge < Name of Branch>** : it will merge one branch to another automatically, for example as shown in above image we can merge "feature-1" to "main" branch.
+
+
+
+
+
+    
