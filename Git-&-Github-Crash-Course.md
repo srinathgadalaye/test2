@@ -142,4 +142,14 @@ git help
     <img width="1265" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/564561ea-6fe8-4a0c-ae4c-a2c965db0d82">
 
 
-    
+11. Connecting Local and Remote Repositories
+   <img width="1222" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/62c9bd6c-3f2e-4e22-9625-5f95996b0c2b">
+
+```
+git remote add <Local repo Name> <github repo link>: #this will connect github to local git repository(eg git remote add origin https:github.com/abc/xyz.git)
+
+```
+
+
+
+12. pushing commit to github and understanding 
