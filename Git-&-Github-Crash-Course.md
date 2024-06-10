@@ -51,7 +51,7 @@ git help
    -  from above image we learned
       - **git add <File(01) NAME> <File(02) NAME> <File(03) NAME>**: it will set the stage to commit
          - Another way to stage all files at ones is "**git add .**" or "git add *" . Downside of this approach is that it add all the files in the repo which may include any unwanted files..  and so you can add ".gitignore" file and mention files which you want git to ignore and Hence now you can use "git add ." and it will add only the required files and ignore the unwanted files(refere point # 9)
-      - **git commit -m " ENTER YOUR MESSAGE HERE "**: it will commit the file(s) to github
+      - **git commit -m " ENTER YOUR MESSAGE HERE "**: it will commit the file(s) to git(not to github)
       - **git status**: it provide current status like is the file in stagging or commited, what all files etc..
       - **git log**: it will provide you all the commits you have done so far, with date-time and Unique ID of that commit...
 
@@ -119,11 +119,27 @@ git help
    <img width="896" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/f2dcd4d8-3315-4b1f-955f-6324dfba7d1a">
    
    - When you intiatlize the git project with "git init", you get by default "main" branch(will contains all your commits)
-   - **git branch < Name of Branch>** : it will create new branch, by default this will take your latest commit(as starting point) and create new branch, as shown above for "C2" commit for branch "feature-1"
-   - **git merge < Name of Branch>** : it will merge one branch to another automatically, for example as shown in above image we can merge "feature-1" to "main" branch.
+   - **git branch < Name of Branch>** : it will create new branch, by default this will take your latest commit(as starting point) and create new branch, as shown above for "C2" commit for branch "feature-1" and then you can shift to new branch with **git checkout < Name of Branch** (eg git checkout feature-1)
+   - **git checkout -b < Name of Branch>** : this is alternate way of creating new branch and started using it right away..
+      - **git branch** : it will share all the exsisting branches names (with current branch name in green coloured and star)
+      - **git branch -D < Name of Branch>** : it will delete the branch.
+   - **git merge < Name of Branch>** : it will merge name mentioned in the command with the current active branch and automatically try to resolve the conflicts, for example as shown in above image we can merge "feature-1" to "main" branch. then acivate main branch by "git checkout main"(and check current branch by git log, main branch should be activate) and then merge "feature-1"  with main branch by git merge "feature-1" .. now after successful merged, this will show "how many files changed? how many lines added and delted"
+     
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h1>Github</h1>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
-
+11. Github Intro
+    <img width="1265" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/564561ea-6fe8-4a0c-ae4c-a2c965db0d82">
 
 
     
