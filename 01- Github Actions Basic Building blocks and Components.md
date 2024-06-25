@@ -90,102 +90,13 @@
 <img width="1280" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/19745d8d-dcaa-4c41-9d22-3b2e8174c9e0">
 
 - Final Deployment Code - https://github.com/BaliDataMan/github-actions-course-resources/blob/main/Code/02%20Basics/03%20Finished%20Project/.github/workflows/deployment.yml
-  ```
-  
-  name: Deploy Project
-  on: [push, workflow_dispatch]
-  jobs:
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Get code
-          uses: actions/checkout@v3
-        - name: Install NodeJS
-          uses: actions/setup-node@v3
-          with:
-            node-version: 18
-        - name: Install dependencies
-          run: npm ci
-        - name: Run tests
-          run: npm test
-    deploy:
-      needs: test
-      runs-on: ubuntu-latest
-      steps:
-        - name: Get code
-          uses: actions/checkout@v3
-        - name: Install NodeJS
-          uses: actions/setup-node@v3
-          with:
-            node-version: 18
-        - name: Install dependencies
-          run: npm ci
-        - name: Build project
-          run: npm run build
-        - name: Deploy
-          run: echo "Deploying ..."
-  
-  ```
+  <img width="1086" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/62e981fd-8890-4ccc-8ee1-5a5b1ecef74b">
+
 
   - Another 2 deployments exmaples:
     - Deployment 01: https://github.com/BaliDataMan/github-actions-course-resources/blob/main/Code/02%20Basics/05%20Practice%20Project%20(Finished)/.github/workflows/deployment1.yaml
+      <img width="1095" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/499412eb-7b69-4d0e-92c9-1214bbc57dd8">
       
-      ```
-      name: Deployment Exercise 1
-      on: push
-      jobs:
-        deploy:
-          runs-on: ubuntu-latest
-          steps:
-            - name: Get code
-              uses: actions/checkout@v3
-            - name: Install dependencies
-              run: npm ci
-            - name: Lint
-              run: npm run lint
-            - name: Test code
-              run: npm run test
-            - name: Build code
-              run: npm run build
-            - name: Deploy code
-              run: echo "Deploying..."
-      
-      ``` 
-    - Deployment 02: https://github.com/BaliDataMan/github-actions-course-resources/blob/main/Code/02%20Basics/05%20Practice%20Project%20(Finished)/.github/workflows/deployment2.yaml
-      ```
-      name: Deployment Exercise 2
-      on: push
-      jobs:
-        lint:
-          runs-on: ubuntu-latest
-          steps: 
-            - name: Get code
-              uses: actions/checkout@v3
-            - name: Install dependencies
-              run: npm ci
-            - name: Lint
-              run: npm run lint
-        test:
-          needs: lint
-          runs-on: ubuntu-latest
-          steps: 
-            - name: Get code
-              uses: actions/checkout@v3
-            - name: Install dependencies
-              run: npm ci
-            - name: Test code
-              run: npm run test
-        deploy:
-          needs: test
-          runs-on: ubuntu-latest
-          steps:
-            - name: Get code
-              uses: actions/checkout@v3
-            - name: Install dependencies
-              run: npm ci
-            - name: Build code
-              run: npm run build
-            - name: Deploy code
-              run: echo "Deploying..."
 
-      ```
+    - Deployment 02: https://github.com/BaliDataMan/github-actions-course-resources/blob/main/Code/02%20Basics/05%20Practice%20Project%20(Finished)/.github/workflows/deployment2.yaml
+      <img width="1077" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/95fc3315-6606-44b2-845d-e9f09217da11">
