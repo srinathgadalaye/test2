@@ -72,7 +72,7 @@
 
   <img width="870" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/32915547-3d22-4485-a5b7-495c9f8c175d">
 
-  - If its added as Contributor the flow will excute, but if someone unknown or first time raising PR, the Github worflow will not execute even if asper the code.
+  - If its added as Contributor the flow will excute, but if someone unknown or first time raising PR, the Github worflow will not execute even if the PR is asper the code written in Github worflows.
 
 
 </br>
@@ -99,6 +99,15 @@
   - For more details (official doc: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs):
 
       <img width="676" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/97736291-5f6c-4512-8552-c1dd6c059146">
+
+
+
+</br>
+</br>
+</br>
+<h2> Summary/h2>
+
+  <img width="1104" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/12672300-aa0a-4f53-a5d5-42061d455fcc">
 
 
   
