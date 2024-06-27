@@ -105,7 +105,7 @@
 </br>
 </br>
 </br>
-<h2> Summary/h2>
+<h2> Summary</h2>
 
   <img width="1104" alt="image" src="https://github.com/BaliDataMan/github-actions-course-resources/assets/29046663/12672300-aa0a-4f53-a5d5-42061d455fcc">
 
