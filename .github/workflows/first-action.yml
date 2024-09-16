@@ -6,6 +6,6 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - name: Print Greeting
-        run: echo "Hare Krishna"
-      - name: Print Goodbye
-        run: echo "Haribol"
+        run: |
+          echo "Hare Krishna"
+          echo "Haribol"
