@@ -12,8 +12,12 @@ jobs:
           cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
           npm ci
       - name: Lint
-        run: npm  run lint
+        run: |
+          cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
+          npm  run lint
       - name: Test code
-        run: npm  run test
+        run: |
+          cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
+          npm  run test
       - name: Deploy code
         run: echo "Deploying..."
