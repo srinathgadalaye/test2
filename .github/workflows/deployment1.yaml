@@ -1,5 +1,6 @@
 name: Deployment Exercise 1
 on: push
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -11,12 +12,8 @@ jobs:
           cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
           npm ci
       - name: Lint
-        run: |
-          cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
-          npm  run lint
+        run: npm  run lint
       - name: Test code
-        run: |
-          cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/ 
-          npm  run test
+        run: npm  run test
       - name: Deploy code
         run: echo "Deploying..."
