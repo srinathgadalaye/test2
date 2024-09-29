@@ -16,6 +16,7 @@ jobs:
           cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
           npm  run lint
   test:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -32,6 +33,7 @@ jobs:
         run: echo "Deploying..."
 
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code
