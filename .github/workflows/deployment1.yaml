@@ -2,11 +2,11 @@ name: Deployment Exercise 1
 on: push
 
 jobs:
-  deploy:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3       
       - name: Install dependencies
         run: |
           cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
@@ -15,9 +15,34 @@ jobs:
         run: |
           cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
           npm  run lint
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3  
+      - name: Install dependencies
+        run: |
+          cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
+          npm ci
       - name: Test code
         run: |
           cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
           npm  run test
+      - name: Deploy code
+        run: echo "Deploying..."
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3  
+      - name: Install dependencies
+        run: |
+          cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
+          npm ci
+      - name: Build code
+        run: |
+          cd Code/02\ Basics/04\ Practice\ Project\ \(Start\)/
+          npm  run build
       - name: Deploy code
         run: echo "Deploying..."
